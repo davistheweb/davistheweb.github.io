@@ -1,5 +1,5 @@
 // function([string1, string2], target id, [color1, color2])
-consoleText(['Josiah Davis.', 'Also Known AS Davistheweb.'], 'name', ['#4040e9', '#4040e9']);
+consoleText(['Josiah Davis.',], 'name', ['#4040e9',]);
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
   const visible = true;
