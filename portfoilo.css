@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Roboto:wght@100&display=swap'); 
+
+  @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Roboto:wght@100&family=Tangerine:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Kalnia:wght@700&family=Roboto:wght@100&display=swap');
+::-webkit-scrollbar
+{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb
+{
+    background: linear-gradient(#4040e9, #fff,#000);
+    border-radius: 7px;
+}
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'PT', Serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #333;
+    
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding:0 50px;
+    border: none;
+
+}
+
+.navbar h2{
+    color: #4040e9;
+    font-family: kalnia;
+    font-weight: bolder;
+    
+}
+ .navbar li{
+    list-style: none;
+ }
+ .navbar ul{
+    display: flex;
+    border: none;
+ }
+
+ .navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 25px;
+    transition: color 0.3 ease;
+    border: none;
+    
+
+ }
+
+ .navbar ul li:hover a{
+    box-shadow: 0 0 5px #4040e9, 0 0 25px #4040e9, 0 0 50px #4040e9, 0 0 100px #4040e9, 0 0 200px #4040e9;
+ }
+
+ .navbar ul li:last-child a{ 
+    margin: 0;
+}
+
+.hire-btn{
+    background: #fff;
+    font-family: kalnia;
+    padding: 6px 30px;
+    border: none;
+    color: #4040e9;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3 ease;
+}
+
+.hire-btn:hover{
+    background: #fff;
+    box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff, 0 0 200px #fff;
+}
+.main img{
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     
+}
+.main h4{
+    font-size: 42px;
+    color: #fff;
+    font-weight: bold;
+}
+.main  h4 span{
+    font-family: kalnia;
+    color: #4040e9;
+}
+.title{
+    font-size: 44px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 5px;
+    position: relative;
+    -webkit-text-stroke: 0vw #000;
+}
+.title::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: #000;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #000;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }   
+}
+.guarantee{
+    margin-top: 50px;
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1%;
+}
+
+.guarantee .item{
+    background: #4040e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0 30px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.3 ease ;
+}
+.guarantee .item:hover{
+    box-shadow: 0 0 3px #8F9779, 0 0 15px #8F9779, 0 0 25px #8F9779, 0 0 25px #8F9779, 0 0 15px #8F9779;
+}
+
+.guarantee .item .icon{
+    width: 46px;
+    height: 46px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.guarantee .item:hover .icon{
+    background-color: #8f9779;
+}
+
+.guarantee .item .icon i{
+    font-size: 30px;
+}
+
+.guarantee .item .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guarantee .item .info h3{
+    color: #fff;
+    font-size: 28px;
+}
+.guarantee .item .info p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.guarantee .item > i{
+    color: #fff;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+.guarantee .item:hover > i{
+    color: #fff;
+}
+
+.seprator{
+    margin: 50px 50px 30px;
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.08);
+    display: inline-block;
+    color: #fff;
+    border-radius: 15px;
+    border-color: #fff;
+    
+}
+
+.about{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    padding: 0 50px;
+}
+
+.about .info h3{
+    color: #4040e9;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: Arial;
+    margin-bottom: 10px;
+    
+}
+.about .info p{
+    color: #fff;
+    font-size: 14px;
+}
+
+.about .info button{
+    margin-top: 35px;
+}
+
+.skills{
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+.skills .left{
+    width: 680px;
+}
+
+.skills .left .info h3{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.skills .left .info p{
+    color: #fff;
+    font-size: 15px;
+}
+.skills .left button{
+    margin-top: 30px;
+}
+
+.coding{
+    color: #fff;
+    margin-top: 30px;
+    padding: 0 50px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.coding p{
+    font-size: 30px;
+}
+
+.coding .item-l{
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.coding .item{
+    background: #383d52;
+    width: 175px;
+    height: 175px;
+    display: flex;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.coding .item i{
+    font-size: 100px;
+    color: #fff;
+    border-radius: 12px;
+    
+}
+.coding .item-d{
+    margin-top: 30px;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.coding .item-f{
+    margin-top: 30px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.coding .item:hover{
+    background: #333;
+    transition: all 0.5s ease-in-out;
+}
