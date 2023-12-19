@@ -215,7 +215,8 @@ body{
     display: inline-block;
     color: #fff;
     border-radius: 15px;
-    border-color: #fff;
+    border: 1px solid #fff;
+    
     
 }
 
@@ -271,15 +272,26 @@ body{
 
 .coding{
     color: #fff;
-    margin-top: 30px;
+    margin-top: 45px;
     padding: 0 50px;
     gap: 50px;
     justify-content: center;
     align-items: center;
 }
-
-.coding p{
-    font-size: 30px;
+.roundsk{
+    color: #fff;
+    font-weight: 900;
+    border-radius: 15px;
+    background: #242323;
+    display: inline-block;
+    box-sizing:content-box;
+    font-size: 35px;
+    padding: 3px 5px 5px 5px;
+    margin: 10px 15px 10px;
+    border: 1px solid #7d7c7c;
+}
+.roundsk:hover{
+    background: linear-gradient(to right, #242323,#000);
 }
 
 .coding .item-l{
@@ -304,6 +316,37 @@ body{
     border-radius: 12px;
     
 }
+#html   {
+    color: #ff7300;
+}
+#css    {
+    color: #4040ed ;
+}
+
+#javascript {
+    color: #ffd000;
+}
+#php    {
+    color: #4040ed;
+}
+#visualc    {
+    color: #4040ed;
+}
+
+#git    {
+    color: #ff7300;
+}
+
+#github {
+    color: #5097b3;
+}
+#bootstrap{
+    color: #563c7a;
+}
+
+#react  {
+    color: #87ceeb;
+}
 .coding .item-d{
     margin-top: 30px;
     display: flex;
@@ -320,6 +363,6 @@ body{
     align-items: center;
 }
 .coding .item:hover{
-    background: #333;
+    background: #5f5c5c;
     transition: all 0.5s ease-in-out;
 }
